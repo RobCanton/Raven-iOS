@@ -116,6 +116,7 @@ PODS:
   - Socket.IO-Client-Swift (15.2.0):
     - Starscream (~> 3.1)
   - Starscream (3.1.1)
+  - SwiftTickerView (1.5.0)
 
 DEPENDENCIES:
   - Expression
@@ -126,6 +127,7 @@ DEPENDENCIES:
   - Firebase/Functions
   - GoogleSignIn
   - Socket.IO-Client-Swift (~> 15.2.0)
+  - SwiftTickerView
 
 SPEC REPOS:
   trunk:
@@ -154,6 +156,7 @@ SPEC REPOS:
     - PromisesObjC
     - Socket.IO-Client-Swift
     - Starscream
+    - SwiftTickerView
 
 SPEC CHECKSUMS:
   AppAuth: 73574f3013a1e65b9601a3ddc8b3158cce68c09d
@@ -181,7 +184,8 @@ SPEC CHECKSUMS:
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  SwiftTickerView: e918f84d7b87b23bce82166ae8fcf902a862523c
 
-PODFILE CHECKSUM: 822f2c95f286e6475fe947f83cd3c5b37a170205
+PODFILE CHECKSUM: 6d40186201b11a6178c05be8b946b31e8a3bc6ae
 
 COCOAPODS: 1.8.4

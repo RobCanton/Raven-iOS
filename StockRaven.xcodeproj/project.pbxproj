@@ -12,6 +12,7 @@
 		B024908624397D4800680504 /* Equation+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B024908524397D4800680504 /* Equation+Parser.swift */; };
 		B0491DAB2444ED11002131A2 /* PolygonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0491DAA2444ED11002131A2 /* PolygonViewController.swift */; };
 		B07587202426497100E6F40A /* WatchlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B075871F2426497100E6F40A /* WatchlistManager.swift */; };
+		B07B1D70244BEDDC007C086F /* StockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B1D6F244BEDDC007C086F /* StockManager.swift */; };
 		B07F2B6C244921170047D359 /* PolygonStockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F2B6B244921170047D359 /* PolygonStockCell.swift */; };
 		B09759842426D56A006BE024 /* Item+Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09759832426D56A006BE024 /* Item+Evaluator.swift */; };
 		B0975986242C6757006BE024 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0975985242C6757006BE024 /* Date+Extensions.swift */; };
@@ -70,6 +71,10 @@
 		B0E698982432FCA500ED6FA6 /* LoadingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E698972432FCA500ED6FA6 /* LoadingBar.swift */; };
 		B0E71F13243CEF6600DED850 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E71F12243CEF6600DED850 /* Currency.swift */; };
 		B0E71F15243D227600DED850 /* CurrencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E71F14243D227600DED850 /* CurrencyManager.swift */; };
+		B0EE1C73244BF525005C2C92 /* TickerTapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE1C72244BF525005C2C92 /* TickerTapeView.swift */; };
+		B0EE1C75244C0200005C2C92 /* TickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE1C74244C0200005C2C92 /* TickerView.swift */; };
+		B0EE1C77244C020F005C2C92 /* TickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EE1C76244C020F005C2C92 /* TickerView.xib */; };
+		B0EE1C79244CEC59005C2C92 /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE1C78244CEC59005C2C92 /* StockDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +84,7 @@
 		B024908524397D4800680504 /* Equation+Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Equation+Parser.swift"; sourceTree = "<group>"; };
 		B0491DAA2444ED11002131A2 /* PolygonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonViewController.swift; sourceTree = "<group>"; };
 		B075871F2426497100E6F40A /* WatchlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistManager.swift; sourceTree = "<group>"; };
+		B07B1D6F244BEDDC007C086F /* StockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockManager.swift; sourceTree = "<group>"; };
 		B07F2B6B244921170047D359 /* PolygonStockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonStockCell.swift; sourceTree = "<group>"; };
 		B09759832426D56A006BE024 /* Item+Evaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+Evaluator.swift"; sourceTree = "<group>"; };
 		B0975985242C6757006BE024 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
@@ -140,6 +146,10 @@
 		B0E698972432FCA500ED6FA6 /* LoadingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBar.swift; sourceTree = "<group>"; };
 		B0E71F12243CEF6600DED850 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		B0E71F14243D227600DED850 /* CurrencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyManager.swift; sourceTree = "<group>"; };
+		B0EE1C72244BF525005C2C92 /* TickerTapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerTapeView.swift; sourceTree = "<group>"; };
+		B0EE1C74244C0200005C2C92 /* TickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerView.swift; sourceTree = "<group>"; };
+		B0EE1C76244C020F005C2C92 /* TickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TickerView.xib; sourceTree = "<group>"; };
+		B0EE1C78244CEC59005C2C92 /* StockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
 		E56BB627A65CE0F432C55F05 /* Pods-StockRaven.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockRaven.debug.xcconfig"; path = "Target Support Files/Pods-StockRaven/Pods-StockRaven.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +186,10 @@
 			isa = PBXGroup;
 			children = (
 				B0491DAA2444ED11002131A2 /* PolygonViewController.swift */,
+				B0EE1C78244CEC59005C2C92 /* StockDetailViewController.swift */,
+				B0EE1C74244C0200005C2C92 /* TickerView.swift */,
+				B0EE1C76244C020F005C2C92 /* TickerView.xib */,
+				B0EE1C72244BF525005C2C92 /* TickerTapeView.swift */,
 				B07F2B6B244921170047D359 /* PolygonStockCell.swift */,
 				B0CA30CC2446EC410022F8DA /* PolygonSearchViewController.swift */,
 			);
@@ -251,6 +265,7 @@
 				B0A65C542421E9AE00B8DA44 /* ItemManager.swift */,
 				B0E71F14243D227600DED850 /* CurrencyManager.swift */,
 				B075871F2426497100E6F40A /* WatchlistManager.swift */,
+				B07B1D6F244BEDDC007C086F /* StockManager.swift */,
 				B0BF2C73243BC94000CEAEA1 /* Theme.swift */,
 			);
 			path = Managers;
@@ -442,6 +457,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0EE1C77244C020F005C2C92 /* TickerView.xib in Resources */,
 				B0BF2C76243BCEC700CEAEA1 /* Colors.xcassets in Resources */,
 				B0A65C3D2421E85700B8DA44 /* LaunchScreen.storyboard in Resources */,
 				B0A65C3A2421E85700B8DA44 /* Assets.xcassets in Resources */,
@@ -524,6 +540,7 @@
 				B0A65C5A2421E9CB00B8DA44 /* IEXCloudAPI.swift in Sources */,
 				B0A65C962421EA8F00B8DA44 /* Array+Extensions.swift in Sources */,
 				B0A65C6D2421EA3B00B8DA44 /* Easings.swift in Sources */,
+				B0EE1C75244C0200005C2C92 /* TickerView.swift in Sources */,
 				B0A65C742421EA5800B8DA44 /* Fuse.swift in Sources */,
 				B0A65C302421E85400B8DA44 /* SceneDelegate.swift in Sources */,
 				B0A65C592421E9CB00B8DA44 /* RavenAPI.swift in Sources */,
@@ -550,6 +567,7 @@
 				B097598D242D8FA9006BE024 /* CalculatorViewController.swift in Sources */,
 				B0CA30CD2446EC410022F8DA /* PolygonSearchViewController.swift in Sources */,
 				B0975986242C6757006BE024 /* Date+Extensions.swift in Sources */,
+				B07B1D70244BEDDC007C086F /* StockManager.swift in Sources */,
 				B0E71F13243CEF6600DED850 /* Currency.swift in Sources */,
 				B0BF2C72243BC56500CEAEA1 /* SettingsViewController.swift in Sources */,
 				B0A65C4D2421E99500B8DA44 /* Evaluation.swift in Sources */,
@@ -558,12 +576,14 @@
 				B0A65C4E2421E99500B8DA44 /* Equation.swift in Sources */,
 				B0A65C972421EA8F00B8DA44 /* AccessoryView.swift in Sources */,
 				B0A65C6A2421EA3B00B8DA44 /* UIColor+Extensions.swift in Sources */,
+				B0EE1C79244CEC59005C2C92 /* StockDetailViewController.swift in Sources */,
 				B0BF2C74243BC94000CEAEA1 /* Theme.swift in Sources */,
 				B0A65C882421EA7800B8DA44 /* EquationViewController.swift in Sources */,
 				B0A65C552421E9AE00B8DA44 /* ItemManager.swift in Sources */,
 				B0A65C6E2421EA3B00B8DA44 /* UIFont+Extensions.swift in Sources */,
 				B07587202426497100E6F40A /* WatchlistManager.swift in Sources */,
 				B0A65C8A2421EA7800B8DA44 /* EmptyTableViewCell.swift in Sources */,
+				B0EE1C73244BF525005C2C92 /* TickerTapeView.swift in Sources */,
 				B0A65C7D2421EA6E00B8DA44 /* TagsView.swift in Sources */,
 				B0A65C892421EA7800B8DA44 /* TagsTableViewCell.swift in Sources */,
 				B0A65C872421EA7800B8DA44 /* WatchLevelTableViewCell.swift in Sources */,

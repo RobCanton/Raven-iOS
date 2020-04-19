@@ -42,7 +42,7 @@ class StockCell:UITableViewCell {
         let titleView = UIView()
         
         tickerLabel = UILabel()
-        tickerLabel.font = UIFont.monospacedSystemFont(ofSize: 18, weight: .medium)
+        tickerLabel.font = UIFont.systemFont(ofSize: 18, weight: .medium)//monospacedSystemFont(ofSize: 18, weight: .medium)
         tickerLabel.text = "0.00"
         
         titleView.addSubview(tickerLabel)
@@ -50,7 +50,7 @@ class StockCell:UITableViewCell {
         tickerLabel.constraintToSuperview(0, 0, 0, nil, ignoreSafeArea: true)
         
         nameLabel = UILabel()
-        nameLabel.font = UIFont.monospacedSystemFont(ofSize: 12, weight: .light)
+        nameLabel.font = UIFont.systemFont(ofSize: 12, weight: .light)//monospacedSystemFont(ofSize: 12, weight: .light)
         nameLabel.text = "0.00"
         nameLabel.textColor = UIColor.label
         
@@ -58,7 +58,7 @@ class StockCell:UITableViewCell {
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.lastBaselineAnchor.constraint(equalTo: tickerLabel.lastBaselineAnchor).isActive = true
         nameLabel.leadingAnchor.constraint(equalTo: tickerLabel.trailingAnchor, constant: 8).isActive = true
-        nameLabel.trailingAnchor.constraint(equalTo: titleView.trailingAnchor).isActive = true
+        nameLabel.trailingAnchor.constraint(equalTo: titleView.trailingAnchor, constant: -72).isActive = true
         
         tickerLabel.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         nameLabel.setContentHuggingPriority(.defaultLow, for: .horizontal)
@@ -75,7 +75,7 @@ class StockCell:UITableViewCell {
         let priceView = UIView()
         
         priceLabel = UILabel()
-        priceLabel.font = UIFont.monospacedSystemFont(ofSize: 32, weight: .bold)
+        priceLabel.font = UIFont.systemFont(ofSize: 32, weight: .bold)//monospacedSystemFont(ofSize: 32, weight: .bold)
         priceLabel.text = "0.00"
         
         priceView.addSubview(priceLabel)
@@ -83,7 +83,7 @@ class StockCell:UITableViewCell {
         priceLabel.constraintToSuperview(0, 0, 0, nil, ignoreSafeArea: true)
         
         changeLabel = UILabel()
-        changeLabel.font = UIFont.monospacedSystemFont(ofSize: 15, weight: .regular)
+        changeLabel.font = UIFont.systemFont(ofSize: 15, weight: .regular)//.monospacedSystemFont(ofSize: 15, weight: .regular)
         changeLabel.text = "+0.26 (0.11%)"
         changeLabel.textColor = UIColor(hex: "33E190")
         
@@ -98,7 +98,7 @@ class StockCell:UITableViewCell {
         let bidView = UIView()
         
         bidAskLabel = UILabel()
-        bidAskLabel.font = UIFont.monospacedSystemFont(ofSize: 16, weight: .medium)
+        bidAskLabel.font = UIFont.systemFont(ofSize: 15, weight: .regular)//.monospacedSystemFont(ofSize: 16, weight: .medium)
         bidAskLabel.text = "0.00"
         
         bidView.addSubview(bidAskLabel)
@@ -106,7 +106,7 @@ class StockCell:UITableViewCell {
         bidAskLabel.constraintToSuperview(0, 0, 0, nil, ignoreSafeArea: true)
         
         marketCapLabel = UILabel()
-        marketCapLabel.font = UIFont.monospacedSystemFont(ofSize: 15, weight: .semibold)
+        marketCapLabel.font = UIFont.systemFont(ofSize: 15, weight: .semibold)//monospacedSystemFont(ofSize: 15, weight: .semibold)
         marketCapLabel.text = "14.45B"
         marketCapLabel.textColor = UIColor(hex: "33E190")
         

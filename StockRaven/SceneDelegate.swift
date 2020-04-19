@@ -136,6 +136,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         RavenAPI.shared.getItems { items in
             ItemManager.shared.setItems(items)
             
+            StockManager.shared.observe()
+            
             RavenAPI.shared.observeItems()
             CurrencyManager.shared.observeRates()
             
