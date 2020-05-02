@@ -35,12 +35,18 @@ class TickerView: UIView {
         tickerTapeView.registerNodeView(UILabel.self, for: labelIdentifier)
         tickerTapeView.tickerDelegate = self
         tickerTapeView.reloadData()
-        tickerTapeView.start()
+        
         let divider = UIView()
         addSubview(divider)
-        divider.constraintToSuperview(nil, 0, 0, 0, ignoreSafeArea: true)
+        divider.constraintToSuperview(0, 0, nil, 0, ignoreSafeArea: true)
         divider.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
         divider.backgroundColor = UIColor.separator
+        
+        let botDivider = UIView()
+        addSubview(botDivider)
+        botDivider.constraintToSuperview(nil, 0, 0, 0, ignoreSafeArea: true)
+        botDivider.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
+        botDivider.backgroundColor = UIColor.separator
     }
 
 }

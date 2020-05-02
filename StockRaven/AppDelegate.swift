@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import Firebase
 import GoogleSignIn
+import UserNotifications
 
 var database:DatabaseReference {
     return Database.database().reference().child("app")
@@ -25,7 +26,7 @@ var functions:Functions {
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
 
 
 
@@ -36,8 +37,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         
+        UNUserNotificationCenter.current().delegate = self
+        
+        Messaging.messaging().delegate = self
+        
         return true
     }
+    
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+        print("FCM Token: \(fcmToken)")
+        
+        PolyravenAPI.pushToken = fcmToken
+        PolyravenAPI.registerPushToken()
+    }
+    
 
     // MARK: UISceneSession Lifecycle
 

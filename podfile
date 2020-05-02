@@ -12,7 +12,11 @@ target 'StockRaven' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Functions'
+  pod 'Firebase/Messaging' 
   pod 'GoogleSignIn'
+  pod 'Texture'
   pod 'Socket.IO-Client-Swift', '~> 15.2.0'
   pod 'SwiftTickerView'
+  pod 'SwiftChart'
+  pod 'SwiftMessages'
 end

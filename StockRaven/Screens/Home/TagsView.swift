@@ -98,20 +98,24 @@ class TagCollectionViewCell:UICollectionViewCell {
         
         textLabel = UILabel()
         bubbleView.addSubview(textLabel)
-        textLabel.constraintToSuperview(4, 8, 4, 8, ignoreSafeArea: true)
+        textLabel.constraintToSuperview(nil, 12, nil, 12, ignoreSafeArea: true)
+        textLabel.constraintToCenter(axis: [.y])
         textLabel.text = "Tech"
-        textLabel.textColor = Theme.current.primary
-        textLabel.font = UIFont.monospacedSystemFont(ofSize: 12, weight: .regular)
+        textLabel.textColor = UIColor.label//Theme.current.primary
+        textLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)//monospacedSystemFont(ofSize: 13, weight: .regular)
         textLabel.textAlignment = .center
         
-        bubbleView.backgroundColor = UIColor.label.withAlphaComponent(0.1)
+        bubbleView.backgroundColor = UIColor.systemFill//UIColor.label.withAlphaComponent(0.15)
         bubbleView.layer.cornerRadius = 4
         bubbleView.clipsToBounds = true
         bubbleView.layer.masksToBounds = true
+        bubbleView.constraintHeight(to: 28)
         
         contentView.layer.cornerRadius = 4
         contentView.clipsToBounds = true
+        contentView.layer.cornerCurve = .continuous
         self.layer.cornerRadius = 4
         self.clipsToBounds = true
+        self.layer.cornerCurve = .continuous
     }
 }

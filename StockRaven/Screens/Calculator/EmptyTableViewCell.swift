@@ -23,8 +23,9 @@ class EmptyTableViewCell:UITableViewCell {
     
     private func setup() {
         self.backgroundColor = UIColor(hex: "161617")
-        self.separatorInset = .zero
+        //self.separatorInset = .zero
         self.selectionStyle = .none
+        self.constraintHeight(to: 32)
         
     }
     

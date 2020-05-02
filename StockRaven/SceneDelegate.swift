@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import UserNotifications
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -69,10 +70,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             
             if let user = user {
                 user.getIDTokenForcingRefresh(true, completion: { token, error in
-                    if token != nil, error == nil {
+                    if let token = token, error == nil {
                         //NetworkManager.shared.token = token
                         print("IDTOKEN: \(token)")
                         PolyravenAPI.authToken = token
+                        
                         self.fetchUserData {
                             self.openHomeScreen()
                         }
@@ -111,11 +113,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func openHomeScreen() {
         
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(
+            options: authOptions,
+            completionHandler: {_, _ in })
+        
+        UIApplication.shared.registerForRemoteNotifications()
+        
         ItemManager.shared.configure()
         RavenAPI.shared.enablePresenceDetection()
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
+        
+        //let textureVC = TextureViewController()
+        //let navVC = UINavigationController(rootViewController: textureVC)
         
         let controller = storyboard.instantiateViewController(withIdentifier: "mainVC")
         self.window?.rootViewController = controller
@@ -133,7 +145,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func fetchUserData(completion: @escaping (()->())) {
+        
+        PolyravenAPI.registerPushToken()
+        
         RavenAPI.shared.getItems { items in
+            
             ItemManager.shared.setItems(items)
             
             StockManager.shared.observe()

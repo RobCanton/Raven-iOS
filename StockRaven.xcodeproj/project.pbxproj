@@ -8,17 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		5AF6026A784CBC3DAD5FA542 /* Pods_StockRaven.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15530BDBE108C7BA46513855 /* Pods_StockRaven.framework */; };
+		B0056734244E0F3200B0108F /* StockHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0056733244E0F3200B0108F /* StockHeaderCell.swift */; };
 		B01E2AE22447DAC6009CE580 /* PolyravenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E2AE12447DAC6009CE580 /* PolyravenAPI.swift */; };
 		B024908624397D4800680504 /* Equation+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B024908524397D4800680504 /* Equation+Parser.swift */; };
 		B0491DAB2444ED11002131A2 /* PolygonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0491DAA2444ED11002131A2 /* PolygonViewController.swift */; };
 		B07587202426497100E6F40A /* WatchlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B075871F2426497100E6F40A /* WatchlistManager.swift */; };
 		B07B1D70244BEDDC007C086F /* StockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B1D6F244BEDDC007C086F /* StockManager.swift */; };
 		B07F2B6C244921170047D359 /* PolygonStockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F2B6B244921170047D359 /* PolygonStockCell.swift */; };
+		B08C4066244EAD8D00AC70B3 /* StockDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C4065244EAD8D00AC70B3 /* StockDescriptionCell.swift */; };
+		B08C4068244F6D4100AC70B3 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C4067244F6D4100AC70B3 /* MainTabBarController.swift */; };
+		B08C406A244F71B300AC70B3 /* Exchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C4069244F71B300AC70B3 /* Exchange.swift */; };
+		B08C406C244F72BA00AC70B3 /* LastTradeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C406B244F72BA00AC70B3 /* LastTradeCell.swift */; };
+		B08C4072244F75CF00AC70B3 /* AlertSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C406E244F75CD00AC70B3 /* AlertSwitchCell.swift */; };
+		B08C4073244F75CF00AC70B3 /* AlertTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C406F244F75CE00AC70B3 /* AlertTextFieldCell.swift */; };
+		B08C4074244F75CF00AC70B3 /* SegmentedControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C4070244F75CE00AC70B3 /* SegmentedControlCell.swift */; };
+		B08C4075244F75CF00AC70B3 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C4071244F75CF00AC70B3 /* AlertViewController.swift */; };
+		B08C4077244F777400AC70B3 /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C4076244F777400AC70B3 /* AlertType.swift */; };
+		B08C4079244F78B500AC70B3 /* StockDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C4078244F78B500AC70B3 /* StockDetailCell.swift */; };
+		B08C407B244F915D00AC70B3 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C407A244F915D00AC70B3 /* Notification+Extensions.swift */; };
 		B09759842426D56A006BE024 /* Item+Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09759832426D56A006BE024 /* Item+Evaluator.swift */; };
 		B0975986242C6757006BE024 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0975985242C6757006BE024 /* Date+Extensions.swift */; };
 		B0975988242D22B9006BE024 /* SymbolStatPairCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0975987242D22B9006BE024 /* SymbolStatPairCell.swift */; };
 		B097598A242D2714006BE024 /* SymbolStatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0975989242D2714006BE024 /* SymbolStatDetailViewController.swift */; };
 		B097598D242D8FA9006BE024 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B097598C242D8FA9006BE024 /* CalculatorViewController.swift */; };
+		B0A2E1212458B0E8009C2D0D /* TextureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A2E1202458B0E8009C2D0D /* TextureViewController.swift */; };
+		B0A2E1232458B5AB009C2D0D /* StockCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A2E1222458B5AB009C2D0D /* StockCellNode.swift */; };
+		B0A2E1252458C4C6009C2D0D /* EditWatchlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A2E1242458C4C6009C2D0D /* EditWatchlistViewController.swift */; };
+		B0A2E1272459041A009C2D0D /* DeleteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A2E1262459041A009C2D0D /* DeleteCell.swift */; };
+		B0A2E129245B6049009C2D0D /* ResetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A2E128245B6049009C2D0D /* ResetCell.swift */; };
+		B0A2E12B245B61DD009C2D0D /* ResetSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A2E12A245B61DD009C2D0D /* ResetSelectViewController.swift */; };
+		B0A2E12D245B9954009C2D0D /* alert.caf in Resources */ = {isa = PBXBuildFile; fileRef = B0A2E12C245B9954009C2D0D /* alert.caf */; };
+		B0A2E12F245BC4C9009C2D0D /* SendNotificationTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A2E12E245BC4C9009C2D0D /* SendNotificationTypeCell.swift */; };
+		B0A2E131245CDB17009C2D0D /* TickerSearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A2E130245CDB17009C2D0D /* TickerSearchResultsController.swift */; };
+		B0A2E133245CDC7D009C2D0D /* TagsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A2E132245CDC7D009C2D0D /* TagsHeaderView.swift */; };
+		B0A2E135245CECC9009C2D0D /* NotificationPresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A2E134245CECC9009C2D0D /* NotificationPresenterView.swift */; };
 		B0A65C2E2421E85400B8DA44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A65C2D2421E85400B8DA44 /* AppDelegate.swift */; };
 		B0A65C302421E85400B8DA44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A65C2F2421E85400B8DA44 /* SceneDelegate.swift */; };
 		B0A65C352421E85400B8DA44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A65C332421E85400B8DA44 /* Main.storyboard */; };
@@ -80,17 +103,40 @@
 /* Begin PBXFileReference section */
 		15530BDBE108C7BA46513855 /* Pods_StockRaven.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockRaven.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C3EF1F6142C5E0C7EE425F /* Pods-StockRaven.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockRaven.release.xcconfig"; path = "Target Support Files/Pods-StockRaven/Pods-StockRaven.release.xcconfig"; sourceTree = "<group>"; };
+		B0056733244E0F3200B0108F /* StockHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockHeaderCell.swift; sourceTree = "<group>"; };
 		B01E2AE12447DAC6009CE580 /* PolyravenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolyravenAPI.swift; sourceTree = "<group>"; };
 		B024908524397D4800680504 /* Equation+Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Equation+Parser.swift"; sourceTree = "<group>"; };
 		B0491DAA2444ED11002131A2 /* PolygonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonViewController.swift; sourceTree = "<group>"; };
 		B075871F2426497100E6F40A /* WatchlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistManager.swift; sourceTree = "<group>"; };
 		B07B1D6F244BEDDC007C086F /* StockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockManager.swift; sourceTree = "<group>"; };
 		B07F2B6B244921170047D359 /* PolygonStockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonStockCell.swift; sourceTree = "<group>"; };
+		B08C4065244EAD8D00AC70B3 /* StockDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDescriptionCell.swift; sourceTree = "<group>"; };
+		B08C4067244F6D4100AC70B3 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B08C4069244F71B300AC70B3 /* Exchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exchange.swift; sourceTree = "<group>"; };
+		B08C406B244F72BA00AC70B3 /* LastTradeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastTradeCell.swift; sourceTree = "<group>"; };
+		B08C406E244F75CD00AC70B3 /* AlertSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertSwitchCell.swift; sourceTree = "<group>"; };
+		B08C406F244F75CE00AC70B3 /* AlertTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTextFieldCell.swift; sourceTree = "<group>"; };
+		B08C4070244F75CE00AC70B3 /* SegmentedControlCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlCell.swift; sourceTree = "<group>"; };
+		B08C4071244F75CF00AC70B3 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		B08C4076244F777400AC70B3 /* AlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
+		B08C4078244F78B500AC70B3 /* StockDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailCell.swift; sourceTree = "<group>"; };
+		B08C407A244F915D00AC70B3 /* Notification+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
 		B09759832426D56A006BE024 /* Item+Evaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+Evaluator.swift"; sourceTree = "<group>"; };
 		B0975985242C6757006BE024 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		B0975987242D22B9006BE024 /* SymbolStatPairCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolStatPairCell.swift; sourceTree = "<group>"; };
 		B0975989242D2714006BE024 /* SymbolStatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolStatDetailViewController.swift; sourceTree = "<group>"; };
 		B097598C242D8FA9006BE024 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		B0A2E1202458B0E8009C2D0D /* TextureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureViewController.swift; sourceTree = "<group>"; };
+		B0A2E1222458B5AB009C2D0D /* StockCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCellNode.swift; sourceTree = "<group>"; };
+		B0A2E1242458C4C6009C2D0D /* EditWatchlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWatchlistViewController.swift; sourceTree = "<group>"; };
+		B0A2E1262459041A009C2D0D /* DeleteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCell.swift; sourceTree = "<group>"; };
+		B0A2E128245B6049009C2D0D /* ResetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetCell.swift; sourceTree = "<group>"; };
+		B0A2E12A245B61DD009C2D0D /* ResetSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetSelectViewController.swift; sourceTree = "<group>"; };
+		B0A2E12C245B9954009C2D0D /* alert.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alert.caf; sourceTree = "<group>"; };
+		B0A2E12E245BC4C9009C2D0D /* SendNotificationTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendNotificationTypeCell.swift; sourceTree = "<group>"; };
+		B0A2E130245CDB17009C2D0D /* TickerSearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerSearchResultsController.swift; sourceTree = "<group>"; };
+		B0A2E132245CDC7D009C2D0D /* TagsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsHeaderView.swift; sourceTree = "<group>"; };
+		B0A2E134245CECC9009C2D0D /* NotificationPresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPresenterView.swift; sourceTree = "<group>"; };
 		B0A65C2A2421E85400B8DA44 /* Raven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A65C2D2421E85400B8DA44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0A65C2F2421E85400B8DA44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,18 +228,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B0056732244E0E6B00B0108F /* StockDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B0EE1C78244CEC59005C2C92 /* StockDetailViewController.swift */,
+				B08C4078244F78B500AC70B3 /* StockDetailCell.swift */,
+				B08C406B244F72BA00AC70B3 /* LastTradeCell.swift */,
+				B0056733244E0F3200B0108F /* StockHeaderCell.swift */,
+				B08C4065244EAD8D00AC70B3 /* StockDescriptionCell.swift */,
+				B08C406D244F75B700AC70B3 /* Alerts */,
+			);
+			path = StockDetail;
+			sourceTree = "<group>";
+		};
 		B0491DA92444ED01002131A2 /* Polygon */ = {
 			isa = PBXGroup;
 			children = (
 				B0491DAA2444ED11002131A2 /* PolygonViewController.swift */,
-				B0EE1C78244CEC59005C2C92 /* StockDetailViewController.swift */,
+				B0A2E130245CDB17009C2D0D /* TickerSearchResultsController.swift */,
+				B0A2E1242458C4C6009C2D0D /* EditWatchlistViewController.swift */,
 				B0EE1C74244C0200005C2C92 /* TickerView.swift */,
 				B0EE1C76244C020F005C2C92 /* TickerView.xib */,
 				B0EE1C72244BF525005C2C92 /* TickerTapeView.swift */,
 				B07F2B6B244921170047D359 /* PolygonStockCell.swift */,
 				B0CA30CC2446EC410022F8DA /* PolygonSearchViewController.swift */,
+				B0A2E1202458B0E8009C2D0D /* TextureViewController.swift */,
+				B0A2E1222458B5AB009C2D0D /* StockCellNode.swift */,
+				B0A2E132245CDC7D009C2D0D /* TagsHeaderView.swift */,
 			);
 			path = Polygon;
+			sourceTree = "<group>";
+		};
+		B08C406D244F75B700AC70B3 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				B08C406E244F75CD00AC70B3 /* AlertSwitchCell.swift */,
+				B0A2E12E245BC4C9009C2D0D /* SendNotificationTypeCell.swift */,
+				B08C406F244F75CE00AC70B3 /* AlertTextFieldCell.swift */,
+				B08C4071244F75CF00AC70B3 /* AlertViewController.swift */,
+				B0A2E12A245B61DD009C2D0D /* ResetSelectViewController.swift */,
+				B0A2E128245B6049009C2D0D /* ResetCell.swift */,
+				B0A2E1262459041A009C2D0D /* DeleteCell.swift */,
+				B08C4070244F75CE00AC70B3 /* SegmentedControlCell.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 		B097598B242D8F81006BE024 /* New */ = {
@@ -255,6 +333,8 @@
 				B024908524397D4800680504 /* Equation+Parser.swift */,
 				B0A65C462421E99400B8DA44 /* Evaluation.swift */,
 				B0A65C492421E99400B8DA44 /* Evaluator.swift */,
+				B08C4069244F71B300AC70B3 /* Exchange.swift */,
+				B08C4076244F777400AC70B3 /* AlertType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -286,7 +366,10 @@
 			children = (
 				B0A65C332421E85400B8DA44 /* Main.storyboard */,
 				B0A65C3B2421E85700B8DA44 /* LaunchScreen.storyboard */,
+				B08C4067244F6D4100AC70B3 /* MainTabBarController.swift */,
+				B0A2E134245CECC9009C2D0D /* NotificationPresenterView.swift */,
 				B0491DA92444ED01002131A2 /* Polygon */,
+				B0056732244E0E6B00B0108F /* StockDetail */,
 				B097598B242D8F81006BE024 /* New */,
 				B0A65C5D2421E9E400B8DA44 /* Auth */,
 				B0A65C5C2421E9E000B8DA44 /* Home */,
@@ -365,6 +448,7 @@
 				B0A65C662421EA3A00B8DA44 /* UIView+Extensions.swift */,
 				B0975985242C6757006BE024 /* Date+Extensions.swift */,
 				B0CFEDF2244B8838002671C8 /* Double+Extensions.swift */,
+				B08C407A244F915D00AC70B3 /* Notification+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -372,6 +456,7 @@
 		B0A65C622421EA1200B8DA44 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B0A2E12C245B9954009C2D0D /* alert.caf */,
 				B0A65C392421E85700B8DA44 /* Assets.xcassets */,
 				B0BF2C75243BCEC700CEAEA1 /* Colors.xcassets */,
 			);
@@ -415,6 +500,8 @@
 			dependencies = (
 			);
 			name = StockRaven;
+			packageProductDependencies = (
+			);
 			productName = StockRaven;
 			productReference = B0A65C2A2421E85400B8DA44 /* Raven.app */;
 			productType = "com.apple.product-type.application";
@@ -443,6 +530,8 @@
 				Base,
 			);
 			mainGroup = B0A65C212421E85400B8DA44;
+			packageReferences = (
+			);
 			productRefGroup = B0A65C2B2421E85400B8DA44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -458,6 +547,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0EE1C77244C020F005C2C92 /* TickerView.xib in Resources */,
+				B0A2E12D245B9954009C2D0D /* alert.caf in Resources */,
 				B0BF2C76243BCEC700CEAEA1 /* Colors.xcassets in Resources */,
 				B0A65C3D2421E85700B8DA44 /* LaunchScreen.storyboard in Resources */,
 				B0A65C3A2421E85700B8DA44 /* Assets.xcassets in Resources */,
@@ -535,17 +625,24 @@
 				B0A65C2E2421E85400B8DA44 /* AppDelegate.swift in Sources */,
 				B0A65C8C2421EA7800B8DA44 /* PredictionsTableCell.swift in Sources */,
 				B0A65C4C2421E99500B8DA44 /* Component.swift in Sources */,
+				B08C4074244F75CF00AC70B3 /* SegmentedControlCell.swift in Sources */,
+				B08C4066244EAD8D00AC70B3 /* StockDescriptionCell.swift in Sources */,
 				B097598A242D2714006BE024 /* SymbolStatDetailViewController.swift in Sources */,
+				B0A2E1212458B0E8009C2D0D /* TextureViewController.swift in Sources */,
 				B0A65C952421EA8F00B8DA44 /* OperationsAccessoryView.swift in Sources */,
 				B0A65C5A2421E9CB00B8DA44 /* IEXCloudAPI.swift in Sources */,
 				B0A65C962421EA8F00B8DA44 /* Array+Extensions.swift in Sources */,
 				B0A65C6D2421EA3B00B8DA44 /* Easings.swift in Sources */,
 				B0EE1C75244C0200005C2C92 /* TickerView.swift in Sources */,
+				B08C4068244F6D4100AC70B3 /* MainTabBarController.swift in Sources */,
+				B08C407B244F915D00AC70B3 /* Notification+Extensions.swift in Sources */,
 				B0A65C742421EA5800B8DA44 /* Fuse.swift in Sources */,
 				B0A65C302421E85400B8DA44 /* SceneDelegate.swift in Sources */,
 				B0A65C592421E9CB00B8DA44 /* RavenAPI.swift in Sources */,
+				B08C4079244F78B500AC70B3 /* StockDetailCell.swift in Sources */,
 				B0A65C942421EA8F00B8DA44 /* PredictionCell.swift in Sources */,
 				B0A65C7C2421EA6E00B8DA44 /* EquationTableViewCell.swift in Sources */,
+				B0A2E1252458C4C6009C2D0D /* EditWatchlistViewController.swift in Sources */,
 				B024908624397D4800680504 /* Equation+Parser.swift in Sources */,
 				B0A65C752421EA5800B8DA44 /* FuseUtilities.swift in Sources */,
 				B0491DAB2444ED11002131A2 /* PolygonViewController.swift in Sources */,
@@ -553,14 +650,18 @@
 				B0A65C6C2421EA3B00B8DA44 /* UIView+Extensions.swift in Sources */,
 				B0A65C7E2421EA6E00B8DA44 /* HomeViewController.swift in Sources */,
 				B0A65C8D2421EA7800B8DA44 /* PredictionResultCell.swift in Sources */,
+				B08C4077244F777400AC70B3 /* AlertType.swift in Sources */,
 				B0E698982432FCA500ED6FA6 /* LoadingBar.swift in Sources */,
 				B07F2B6C244921170047D359 /* PolygonStockCell.swift in Sources */,
 				B0A65C8E2421EA7800B8DA44 /* EvaluationView.swift in Sources */,
 				B0BF2C6F243B8B5A00CEAEA1 /* FooterView.swift in Sources */,
+				B0A2E135245CECC9009C2D0D /* NotificationPresenterView.swift in Sources */,
 				B0E71F15243D227600DED850 /* CurrencyManager.swift in Sources */,
 				B0A65C982421EA8F00B8DA44 /* PredictionsAccessoryView.swift in Sources */,
 				B0975988242D22B9006BE024 /* SymbolStatPairCell.swift in Sources */,
+				B0A2E131245CDB17009C2D0D /* TickerSearchResultsController.swift in Sources */,
 				B0A65C382421E85400B8DA44 /* StockRaven.xcdatamodeld in Sources */,
+				B0A2E1272459041A009C2D0D /* DeleteCell.swift in Sources */,
 				B0A65C4F2421E99500B8DA44 /* Item.swift in Sources */,
 				B0A65C502421E99500B8DA44 /* Evaluator.swift in Sources */,
 				B0A65C6F2421EA3B00B8DA44 /* UITextView+Extensions.swift in Sources */,
@@ -570,26 +671,37 @@
 				B07B1D70244BEDDC007C086F /* StockManager.swift in Sources */,
 				B0E71F13243CEF6600DED850 /* Currency.swift in Sources */,
 				B0BF2C72243BC56500CEAEA1 /* SettingsViewController.swift in Sources */,
+				B08C4073244F75CF00AC70B3 /* AlertTextFieldCell.swift in Sources */,
 				B0A65C4D2421E99500B8DA44 /* Evaluation.swift in Sources */,
+				B08C4075244F75CF00AC70B3 /* AlertViewController.swift in Sources */,
 				B09759842426D56A006BE024 /* Item+Evaluator.swift in Sources */,
+				B0A2E1232458B5AB009C2D0D /* StockCellNode.swift in Sources */,
 				B0A65C6B2421EA3B00B8DA44 /* String+Extensions.swift in Sources */,
+				B08C406A244F71B300AC70B3 /* Exchange.swift in Sources */,
 				B0A65C4E2421E99500B8DA44 /* Equation.swift in Sources */,
 				B0A65C972421EA8F00B8DA44 /* AccessoryView.swift in Sources */,
+				B0A2E12B245B61DD009C2D0D /* ResetSelectViewController.swift in Sources */,
 				B0A65C6A2421EA3B00B8DA44 /* UIColor+Extensions.swift in Sources */,
 				B0EE1C79244CEC59005C2C92 /* StockDetailViewController.swift in Sources */,
 				B0BF2C74243BC94000CEAEA1 /* Theme.swift in Sources */,
 				B0A65C882421EA7800B8DA44 /* EquationViewController.swift in Sources */,
 				B0A65C552421E9AE00B8DA44 /* ItemManager.swift in Sources */,
 				B0A65C6E2421EA3B00B8DA44 /* UIFont+Extensions.swift in Sources */,
+				B08C4072244F75CF00AC70B3 /* AlertSwitchCell.swift in Sources */,
 				B07587202426497100E6F40A /* WatchlistManager.swift in Sources */,
 				B0A65C8A2421EA7800B8DA44 /* EmptyTableViewCell.swift in Sources */,
 				B0EE1C73244BF525005C2C92 /* TickerTapeView.swift in Sources */,
 				B0A65C7D2421EA6E00B8DA44 /* TagsView.swift in Sources */,
+				B08C406C244F72BA00AC70B3 /* LastTradeCell.swift in Sources */,
+				B0A2E133245CDC7D009C2D0D /* TagsHeaderView.swift in Sources */,
 				B0A65C892421EA7800B8DA44 /* TagsTableViewCell.swift in Sources */,
 				B0A65C872421EA7800B8DA44 /* WatchLevelTableViewCell.swift in Sources */,
+				B0056734244E0F3200B0108F /* StockHeaderCell.swift in Sources */,
+				B0A2E129245B6049009C2D0D /* ResetCell.swift in Sources */,
 				B0CFEDF3244B8838002671C8 /* Double+Extensions.swift in Sources */,
 				B0A65C8B2421EA7800B8DA44 /* EquationView.swift in Sources */,
 				B01E2AE22447DAC6009CE580 /* PolyravenAPI.swift in Sources */,
+				B0A2E12F245BC4C9009C2D0D /* SendNotificationTypeCell.swift in Sources */,
 				B0A65C512421E99500B8DA44 /* Stock.swift in Sources */,
 				B0A65C782421EA6400B8DA44 /* SignInViewController.swift in Sources */,
 				B0A65C762421EA5800B8DA44 /* String+Fuse.swift in Sources */,

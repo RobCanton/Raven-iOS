@@ -12,7 +12,6 @@ import UIKit
 class StockCell:UITableViewCell {
     
     var stock:PolygonStock?
-    var handle:UInt?
     
     var priceLabel:UILabel!
     var tickerLabel:UILabel!
@@ -127,6 +126,7 @@ class StockCell:UITableViewCell {
     }
     
     func observe(_ ticker:PolygonStock) {
+        stopObserving()
         self.stock = ticker
         //titleLabel.text = "\(ticker.details.name ?? "") (\(ticker.symbol))"
         tickerLabel.text = ticker.symbol
@@ -142,7 +142,7 @@ class StockCell:UITableViewCell {
             self.timeLabel.text = date.UTCToLocalStr
             
             if let shares = stock?.details.shares {
-                let marketCap = Double(shares) * lastTrade.price
+                let marketCap = shares * lastTrade.price
                 marketCapLabel.text = marketCap.shortFormatted
             } else {
                 marketCapLabel.text = ""
@@ -151,65 +151,66 @@ class StockCell:UITableViewCell {
         
         if let lastQuote = ticker.lastQuote {
             self.bidAskLabel.text = "\(lastQuote.bidprice) / \(lastQuote.askprice)"
-            
         }
         
-        NotificationCenter.default.removeObserver(self)
-        NotificationCenter.default.addObserver(self, selector: #selector(didUpdateTrade), name: .init("T.\(ticker.symbol)"), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(didUpdateQuote), name: .init("Q.\(ticker.symbol)"), object: nil)
+        NotificationCenter.addObserver(self,
+                                       selector: #selector(didUpdateTrade),
+                                       type: .stockTradeUpdated(ticker.symbol))
+        NotificationCenter.addObserver(self,
+                                       selector: #selector(didUpdateQuote),
+                                       type: .stockQuoteUpdated(ticker.symbol))
     }
+    
+    func stopObserving() {
+        if let stock = stock {
+            NotificationCenter.removeObserver(self, type: .stockTradeUpdated(stock.symbol))
+            NotificationCenter.removeObserver(self, type: .stockQuoteUpdated(stock.symbol))
+        }
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    
     
     @objc func didUpdateTrade(_ notification:Notification) {
         guard let userInfo = notification.userInfo else { return }
-        guard let p = userInfo["p"] as? Double else { return }
-        guard let t = userInfo["t"] as? TimeInterval else { return }
-        self.priceLabel?.text = "\(p)"
+        guard let _stock = userInfo["stock"] as? PolygonStock else { return }
+        self.stock = _stock
         
-        if let previousClose = stock?.previousClose {
-            let change = p - previousClose.close
-            let changeFormatted = NumberFormatter.localizedString(from: NSNumber(value: change),
-                                                                  number: NumberFormatter.Style.decimal)
+        changeLabel.text = stock?.changeCompositeStr
+        changeLabel.textColor = stock?.changeColor
+        marketCapLabel.textColor = changeLabel.textColor
+        
+        if let lastTrade = _stock.lastTrade {
+            self.priceLabel?.text = "\(lastTrade.price)"
+            let date = Date(timeIntervalSince1970: lastTrade.timestamp / 1000)
+            self.timeLabel.text = date.UTCToLocalStr
             
-            let changePercent = abs( change / previousClose.close )
-            let changePercentFormatted = NumberFormatter.localizedString(from: NSNumber(value: changePercent),
-                                                                         number: NumberFormatter.Style.decimal)
-            var str = change > 0 ? "+\(changeFormatted)" : changeFormatted
-            
-            str += " (\(changePercentFormatted)%)"
-            changeLabel.text = str
-            
-            var color:UIColor = UIColor.label
-            if change > 0 {
-                color = UIColor(hex: "33E190")
-            } else if change < 0 {
-                color = UIColor(hex: "FF3860")
+            if let shares = stock?.details.shares {
+                let marketCap = shares * lastTrade.price
+                marketCapLabel.text = marketCap.shortFormatted
+            } else {
+                marketCapLabel.text = ""
             }
-            
-            changeLabel.textColor = color
-            marketCapLabel.textColor = color
-            
-            
-        } else {
-            changeLabel.text = ""
         }
         
-        if let shares = stock?.details.shares {
-            let marketCap = Double(shares) * p
-            marketCapLabel.text = marketCap.shortFormatted
-        } else {
-            marketCapLabel.text = ""
+        if let lastQuote = _stock.lastQuote {
+            self.bidAskLabel.text = "\(lastQuote.bidprice) / \(lastQuote.askprice)"
+            
         }
-        
-        let date = Date(timeIntervalSince1970: t / 1000)
-        self.timeLabel.text = date.UTCToLocalStr
+        //let date = Date(timeIntervalSince1970: t / 1000)
+        //self.timeLabel.text = date.UTCToLocalStr
         
     }
     
     @objc func didUpdateQuote(_ notification:Notification) {
         guard let userInfo = notification.userInfo else { return }
-        guard let bp = userInfo["bp"] as? Double else { return }
-        guard let ap = userInfo["ap"] as? Double else { return }
-        guard let t = userInfo["t"] as? TimeInterval else { return }
+        
+        guard let _stock = userInfo["stock"] as? PolygonStock else { return }
+        self.stock = _stock
+        guard let bp = stock?.lastQuote?.bidprice else { return }
+        guard let ap = stock?.lastQuote?.askprice else { return }
+        guard let t = stock?.lastQuote?.timestamp else { return }
+        
         self.bidAskLabel.text = "\(bp) / \(ap)"
         let date = Date(timeIntervalSince1970: t / 1000)
         self.timeLabel.text = date.UTCToLocalStr
